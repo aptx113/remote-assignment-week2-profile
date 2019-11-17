@@ -1,0 +1,44 @@
+1. What is Inheritance? Try to explain in Mandarin.
+ans: Inheritance 是物件導向程式設計的一個特點，意指可以從現有的class中衍生出新的class。衍生的class同時具備原class所開放的屬性與方法，且可以在原屬性和方法的基礎上修改出更符合需求的屬性和方法。
+
+2. How to split a string in Android? Explain your understanding, and even better to attach
+some sample code.
+
+ans: 在 Android 中有兩種分割字串的方法，兩者都是指定字串中的特定字元或符號作為分割點，且會回傳由字串組成的陣列，差異如下：
+         （1）public String[] split (String regex, int limit)：可指定要根據regex切成幾個字串。
+         （2）public String[] split (String regex)：僅可指定regex做切割，舉例如下：
+
+var myInfo="My name; My BMI; My phone"
+var separated = myInfo.split(";")
+seperated[0] // "My name"
+separated[1] // "My BMI"
+separated[2] // "My phone"
+
+
+3. What kind of key-value pair collection we use in Android? Attach a sample code that use for-loop to print each key-value pair.
+
+ans: (1) bundle
+     (2) 
+
+val bundle = bundleOf(
+               Pair("age", 29), Pair("name", George)
+)
+for((key, value) in bundle) {
+println("$key-$value")
+
+4. What’s the difference between ArrayList and LinkedList? Try to explain in Mandarin.
+
+ans: 前者的元素的儲存方式是索引和數值一組，所以可以透過索引很快找到該值
+        後者的元素是鍊結在一起，每個元素只知道前後的元素，要搜尋特定元素只能從頭找
+
+5. What are Value Type variables? List out the Value Type variables you know.
+ans: 
+  （1）這類變數可以被直接指派值，之後會在電腦的記憶體中佔用位置，藉由值來傳遞
+  （2）Int, Long, Short,Byte, Float, Double,Char, Bool 
+
+6. What’s the maximum value of Int? If you want to represent integers larger than the limit,
+what should you do instead of using int variables?
+
+ans:
+ (1) 2147483647
+ (2) 可以將變數賦予Long

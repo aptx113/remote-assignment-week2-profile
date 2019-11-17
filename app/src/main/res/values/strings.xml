@@ -34,4 +34,20 @@
     <string name="congratulations">Congratulations!</string>
     <string name="share">Share</string>
     <string name="sharing_not_available">Sharing Not Available</string>
+    <string name="profile_image" />
+    <string name="profile_name">Name</string>
+    <string name="profile_nick_name">Nick Name</string>
+    <string name="george_yu">George Yu</string>
+    <string name="george">George</string>
+    <string name="about_me">About Me</string>
+    <string name="title_profile">Profile</string>
+    <string name="bio">I am George.
+\nI am a counseling psychologist.
+\nI love Yoga.
+\nI love dancing, especially ballroom dance.
+
+
+    </string>
+    <string name="to_do">TODO</string>
+    <string name="profile">Profile</string>
 </resources>
