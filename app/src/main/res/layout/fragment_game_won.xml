@@ -25,35 +25,44 @@
         android:layout_height="match_parent"
         android:background="@color/youWinBackground">
 
-        <Button
-            android:id="@+id/nextMatchButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="@dimen/button_padding"
-            android:paddingEnd="@dimen/button_padding"
-            android:text="Next Match"
-            android:textColor="@color/youWinDark"
-            android:textSize="@dimen/button_text_size"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/youWinImage" />
-
         <ImageView
             android:id="@+id/youWinImage"
             android:layout_width="0dp"
             android:layout_height="@dimen/game_over_height"
             android:layout_marginStart="@dimen/horizontal_margin"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="@dimen/horizontal_margin"
-            android:layout_marginBottom="@dimen/vertical_margin"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/nextMatchButton"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/you_win" />
+
+        <Button
+            android:id="@+id/profileButton"
+            style="@style/WonButton"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/profile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nextMatchButton"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <Button
+            android:id="@+id/nextMatchButton"
+            style="@style/WonButton"
+            android:layout_width="0dp"
+            android:layout_marginTop="60dp"
+            android:text="Next Match"
+            app:layout_constraintEnd_toEndOf="@+id/profileButton"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileButton"
+            app:layout_constraintTop_toBottomOf="@+id/youWinImage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
